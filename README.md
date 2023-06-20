@@ -49,4 +49,5 @@ Click the "Transfer" button to initiate the money transfer.
 
 If the transfer is successful, a success message will be displayed. If there is an error, an error message will be shown.
 
-# Contributions to the Grip Bank web application are welcome! If you encounter any issues or have suggestions for improvement, please submit an issue or a pull request to the repository.
+
+Contributions to the Grip Bank web application are welcome! If you encounter any issues or have suggestions for improvement, please submit an issue or a pull request to the repository.
