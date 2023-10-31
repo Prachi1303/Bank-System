@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction History</title>
+    <link rel="stylesheet" href="/assets/css/style.css">  
+    <link rel="stylesheet" href="/assets/css/Transaction_his_style.css">
+
+</head>
+<body>
+  <header class="header">
+    <div class="left">
+      <a href="/"><div id="left_text">Banker</div></a>
+    </div>
+    <div class="mid">
+        <ul class="navigator">
+            <li><a href="/">Home</a></li>
+            <li><a target="_blank" href="http://localhost/phpmyadmin/index.php?route=/sql&pos=0&db=grip_bank&table=customers">Customers</a></li>
+            <li><a target="_blank" href="/history">Transaction History</a></li>
+            <li><a target="_blank" href="/createUser">Create user</a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <button class="btn"><a target="_blank" href="https://www.linkedin.com/in/prachi-rahadawe-568836254/">contact me</a></button>
+    </div>
+
+</header>
+
+    <h1>Transaction History</h1>
+    <table>
+        <thead>
+          <tr>
+            <th>Sender</th>
+            <th>Receiver</th>
+            <th>Transaction</th>
+            <th>Time</th>
+            <th>Reference_id</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <%  let i=0;  
+              data.map ((items)=>{  %>
+
+          <tr>
+            <td><%=items.sender%></td>
+            <td><%=items.receiver%></td>
+            <td><%=items.amount%></td>
+            <td><%=items.time%></td>
+            <td><%=items.refId%></td>
+          </tr>
+
+          <% }) %>
+         
+        </tbody>
+      </table>
+    
+</body>
+</html>

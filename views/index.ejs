@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grip Bank</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="left">
+        <a href="/"><div id="left_text">Banker</div></a>
+      </div>
+      <div class="mid">
+        <ul class="navigator">
+          <li><a href="/">Home</a></li>
+          <li>
+            <a
+              target="_blank"
+              href="http://localhost/phpmyadmin/index.php?route=/sql&pos=0&db=grip_bank&table=customers"
+              >Customers</a
+            >
+          </li>
+          <li><a target="_blank" href="/history">Transaction History</a></li>
+          <li><a target="_blank" href="/createUser">Create user</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <button class="btn">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/prachi-rahadawe-568836254/"
+            >contact me</a
+          >
+        </button>
+      </div>
+    </header>
+
+    <div class="container">
+      <h2>Transfer Money</h2>
+      <div class="form">
+        <input
+          type="number"
+          required
+          name="sender"
+          id="sender"
+          placeholder="Enter Sender's Acc"
+        />
+        <input
+          type="number"
+          required
+          name="receiver"
+          id="receiver"
+          placeholder="Enter Receiver's Acc"
+        />
+        <input
+          type="number"
+          required
+          name="amount"
+          id="amount"
+          placeholder="Enter Rs"
+        />
+        <button class="transfer_btn" onclick="transferAmount()">
+          Transfer
+        </button>
+      </div>
+    </div>
+
+    <div class="container_2">
+      <h1>Welcome to Banker !</h1>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="/assets/js/worker.js"></script>
+  </body>
+</html>

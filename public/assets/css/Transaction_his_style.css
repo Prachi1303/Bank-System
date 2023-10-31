@@ -1,0 +1,37 @@
+body{
+    background: url(/assets/images/bg/project1_img.jpg) no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+  }
+
+h1{
+    text-align: center;
+    color: orange;
+}
+
+  th, td {
+    border: 1px solid rgb(255, 253, 253);
+    padding: 15px;
+    text-align: center;
+
+  }
+
+  @media (max-width: 600px) {
+    table {
+      font-size: 12px;
+    }
+  
+    th, td {
+      padding: 8px;
+    }
+  }
